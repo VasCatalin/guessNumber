@@ -289,7 +289,7 @@ body {
     font-size: 16px;
     z-index: 1;
     transform: rotateY(38deg) rotateZ(353deg);
-    color: white;
+    color: var(--white);
   }
 
   .chat-box-text-two {
@@ -300,7 +300,7 @@ body {
     text-align: center;
     transform: rotateY(38deg) rotateZ(352deg);
     z-index: 1;
-    color: white;
+    color: var(--white);
   }
 
   .chat-box img:first-child {
@@ -313,5 +313,19 @@ body {
 
   .chat-box img:nth-child(3) {
     display: none;
+  }
+
+  .notification {
+    z-index: 3;
+  }
+
+  .enter-button {
+    background: var(--info);
+    color: white;
+  }
+
+  .enter-button:hover {
+    background: var(--win);
+    color: white;
   }
 }
