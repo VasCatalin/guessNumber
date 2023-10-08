@@ -80,6 +80,8 @@ function checkNumber() {
       restartButton.classList.remove('d-none');
       restartButton.classList.add('d-none-remove', 'fade-in');
       playerBox.classList.add('d-none');
+      getNumberParagraph.innerText = randomNumber;
+      getNumberParagraph.style.color = 'var(--info)';
     }, 1000);
   }
 
