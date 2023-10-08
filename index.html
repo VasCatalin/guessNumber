@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Document</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+  <div
+    class="container"
+    id="container"
+  >
+    <section
+      class="game"
+      id="game"
+    >
+      <div
+        class="chat-box"
+        id="chatBox"
+      >
+        <img
+          src="./img/chat3.png"
+          alt=""
+        >
+        <img
+          src="./img/chat2.png"
+          alt=""
+        >
+        <img
+          src="./img/chat1.png"
+          alt=""
+        >
+
+        <p
+          class="chat-box-text-one"
+          id="chatBoxTextOne"
+        >
+          Numarul este intre 0 si 100.
+        </p>
+
+        <p
+          class="chat-box-text-two"
+          id="chatBoxTextTwo"
+        >
+          Tine minte, ai doar 10 incercari!
+        </p>
+      </div>
+      <div
+        class="table-box"
+        id="tableBox"
+      >
+        <img
+          src="./img/professor.png"
+          alt=""
+          id="professor"
+          class="professor"
+        >
+
+        <h1 id="tableAnswer">?</h1>
+      </div>
+
+      <div
+        class="player-box"
+        id="playerBox"
+      >
+        <p
+          class="notification"
+          id="notification"
+        >
+        </p>
+
+        <p
+          class="last-number"
+          id="lastNumber"
+        >
+          Ultimele numere introduse:
+        </p>
+
+        <p
+          class="last-number-inputs"
+          id="lastNumberInput"
+        >
+          ...
+        </p>
+
+        <section
+          class="enter-number"
+          id="enterNumber"
+        >
+          <input
+            type="number"
+            class="number-input"
+            id="numberInput"
+            placeholder="Introdu un numar..."
+          >
+          <button
+            type="submit"
+            class="enter-button"
+            id="enterButton"
+            onclick="getNumber()"
+          >Verifica</button>
+        </section>
+      </div>
+
+      <section
+        class="restart-section d-none"
+        id="restart"
+      >
+        <button
+          class="restart"
+          id="restartButton"
+          onclick="restart()"
+        >Restart</button>
+      </section>
+    </section>
+  </div>
+
+  <script src="utils.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

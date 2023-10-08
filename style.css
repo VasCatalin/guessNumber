@@ -1,0 +1,208 @@
+body {
+  font-family: 'Leckerli One', cursive;
+  user-select: none;
+  --white: #fff;
+  --black: #000;
+  --win: #2b9401;
+  --draw: #e78d06;
+  --lose: #e70000;
+  --info: #037dbb;
+  --notification: #ff3f3f;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 400px;
+  text-align: left;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.game {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.chat-box {
+  position: absolute;
+  left: 425px;
+  top: -130px;
+}
+
+.chat-box img:nth-child(2) {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+}
+
+.chat-box img:nth-child(3) {
+  position: absolute;
+  top: 200px;
+  left: -10px;
+}
+
+.chat-box-text-one {
+  position: absolute;
+  left: 50px;
+  top: 52px;
+  width: 250px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.chat-box-text-two {
+  position: absolute;
+  left: 40px;
+  top: 75px;
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.table-box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.table-box h1 {
+  transform: rotateY(45deg) rotateZ(350deg);
+
+  font-size: 60px;
+  color: var(--white);
+}
+
+.table-box img {
+  position: absolute;
+  left: -150px;
+  top: -130px;
+}
+
+.player-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notification {
+  position: absolute;
+  font-size: 30px;
+  top: 150px;
+  background: var(--notification);
+  color: var(--white);
+
+  padding: 10px 20px;
+  border-radius: 0 30px 30px 30px;
+
+  display: none;
+
+  box-shadow: 0 0 15px var(--notification);
+  text-shadow: 0 0 1px var(--black);
+  text-align: center;
+}
+
+.fade-in-out {
+  animation: fade-in-out 3s ease-in-out forwards;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.last-number {
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.enter-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 300px;
+}
+
+.number-input {
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  width: 200px;
+}
+
+.enter-button {
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+.restart-section {
+  position: absolute;
+  right: 105px;
+  top: 160px;
+}
+
+.restart {
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background: black;
+  color: white;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-none-remove {
+  display: block;
+}
+
+.fade-in {
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
