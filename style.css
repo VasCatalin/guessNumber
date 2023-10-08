@@ -239,3 +239,79 @@ body {
     scale: 0.8;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 350px;
+    height: 600px;
+    grid-template-columns: 0px 350px;
+  }
+
+  .table-box h1 {
+    font-size: 66px;
+    top: -9px;
+    left: 38px;
+    display: none;
+  }
+
+  .table-box img {
+    width: 300px;
+    left: -25px;
+    top: -55px;
+  }
+
+  .logo {
+    width: 200px;
+    top: -14px;
+    left: 70px;
+  }
+
+  .player-box {
+    margin-top: 80px;
+    top: 0;
+  }
+
+  .alert {
+    top: 318px;
+    left: 70px;
+    font-size: 25px;
+  }
+
+  .restart-section {
+    right: 130px;
+    top: 360px;
+  }
+
+  .chat-box-text-one {
+    left: -412px;
+    top: 260px;
+    width: 250px;
+    font-size: 16px;
+    z-index: 1;
+    transform: rotateY(38deg) rotateZ(353deg);
+    color: white;
+  }
+
+  .chat-box-text-two {
+    left: -387px;
+    top: 290px;
+    width: 170px;
+    font-size: 18px;
+    text-align: center;
+    transform: rotateY(38deg) rotateZ(352deg);
+    z-index: 1;
+    color: white;
+  }
+
+  .chat-box img:first-child {
+    display: none;
+  }
+
+  .chat-box img:nth-child(2) {
+    display: none;
+  }
+
+  .chat-box img:nth-child(3) {
+    display: none;
+  }
+}
