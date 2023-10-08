@@ -82,6 +82,31 @@ function checkNumber() {
       playerBox.classList.add('d-none');
     }, 1000);
   }
+
+  const alert = document.getElementById('alert');
+  switch (true) {
+    case tryNumbers.length === 7:
+      setTimeout(function () {
+        alert.classList.remove('d-none');
+        alert.style.color = 'var(--info)';
+        alert.classList.add('d-none-remove', 'alert-animation');
+        alert.innerText = '3 incercari ramase!';
+      }, 1000);
+      break;
+    case tryNumbers.length === 8:
+      setTimeout(function () {
+        alert.style.color = 'var(--draw)';
+        alert.innerText = '2 incercari ramase!';
+      }, 1000);
+      break;
+    case tryNumbers.length === 9:
+      setTimeout(function () {
+        alert.style.color = 'var(--lose)';
+        alert.innerText = 'Ultima incercare!';
+      }, 1000);
+    default:
+    // code block
+  }
 }
 
 function restart() {
