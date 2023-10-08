@@ -48,6 +48,9 @@ function checkNumber() {
           secondParagraphMessage.style.fontSize = '30px';
           secondParagraphMessage.style.color = 'var(--win)';
           getNumberParagraph.style.color = 'var(--win)';
+          let restartButton = document.getElementById('restart');
+          restartButton.classList.remove('d-none');
+          restartButton.classList.add('d-none-remove', 'fade-in');
           playerBox.classList.add('d-none');
         }, 1000);
     }
