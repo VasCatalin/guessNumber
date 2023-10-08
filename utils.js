@@ -65,7 +65,7 @@ function checkNumber() {
   lastNumberInput.innerText = tryNumbersMessage;
 
   if (
-    tryNumbers.length === 3 &&
+    tryNumbers.length === 10 &&
     Number(getNumberInput.value) !== randomNumber
   ) {
     let restartButton = document.getElementById('restart');
