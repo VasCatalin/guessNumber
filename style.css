@@ -76,8 +76,12 @@ body {
 .table-box h1 {
   transform: rotateY(45deg) rotateZ(350deg);
 
-  font-size: 60px;
+  font-size: 100px;
   color: var(--white);
+
+  position: absolute;
+  top: -50px;
+  left: -25px;
 }
 
 .table-box img {
